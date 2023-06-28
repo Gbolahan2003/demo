@@ -1,0 +1,47 @@
+.hero-section-header {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: Montserrat;
+}
+.hero-section-text {
+  color: #fff;
+  font-size: 6rem;
+  font-family: Adobe Garamond Pro;
+  font-weight: 700;
+  letter-spacing: 0.67375rem;
+}
+.hero-section-place {
+  color: #fff;
+  font-size: 2rem;
+  font-family: Adobe Garamond Pro;
+  font-weight: 700;
+  letter-spacing: 1.5rem;
+}
+.hero-section-description {
+  color: #fff;
+  font-size: 1rem;
+  font-family: Montserrat;
+  letter-spacing: 0.15625rem;
+}
+
+.text-container {
+  margin-left: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: -1rem;
+  width: 40vw;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  // align-items: center;
+  flex-direction: column;
+}
+.button-container {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,61 @@
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-wrap: wrap;
+  gap: -2rem;
+}
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: auto;
+}
+
+%width {
+  width: 30vw;
+}
+footer {
+  .footer-container {
+    background-color: rgba(20, 39, 74, 1);
+    color: #fff;
+    @extend %flex;
+    margin-top: 5rem;
+    padding: 3rem 0;
+  }
+  button {
+    width: 3rem;
+    height: 2rem;
+  }
+  ul {
+    @extend %flex-column;
+    @extend %width;
+    list-style: none;
+  }
+  .lux {
+    color: #fff;
+    font-size: 1.5625rem;
+    font-family: Adobe Garamond Pro;
+    font-weight: 700;
+    letter-spacing: 0.23438rem;
+  }
+  .hotel {
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: Adobe Garamond Pro;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+  }
+  .first-text {
+    color: #fff;
+    font-size: 0.875rem;
+    font-family: Montserrat;
+  }
+  .footer-links {
+    color: #f7f7f7;
+    font-size: 1rem;
+    font-family: Montserrat;
+  }
+}

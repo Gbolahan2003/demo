@@ -1,0 +1,63 @@
+h2 {
+  color: #14274a;
+  font-size: 2.3rem;
+  font-family: Adobe Garamond Pro;
+  font-weight: 700;
+  letter-spacing: 0.075rem;
+}
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  // flex-wrap: wrap;
+}
+.section-flex {
+  // width: 80vw;
+}
+.section2text {
+  color: #14274a;
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  line-height: 2.5rem;
+  padding-left: 2rem;
+  border-left: 2px solid #14274a;
+  width: 40vw;
+}
+.section-2-text {
+  margin-bottom: 2rem;
+}
+.section-flex {
+  @extend %flex;
+  margin: 2rem;
+}
+button {
+  width: 14.75rem;
+  border: none;
+  border-radius: 10px;
+  height: 4rem;
+  font-size: 1.5rem;
+
+  // flex-shrink: 0;
+  background-color: #e0b973;
+  color: #fff;
+  transition: all 0.5s;
+}
+.section2Image {
+  overflow: hidden;
+  width: 60vw;
+  height: 28rem;
+}
+img {
+  height: 28rem;
+  width: 40rem;
+  transition: all 0.5s;
+}
+img:hover {
+  height: 30rem;
+  width: 42rem;
+}
+button:hover {
+  background-color: #be8317;
+  cursor: pointer;
+}
