@@ -23,20 +23,54 @@
   font-family: Montserrat;
   letter-spacing: 0.15625rem;
 }
-
+.secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.secondary-heading {
+  color: #14274a;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Adobe Garamond Pro;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1875rem;
+}
+.secondary-text {
+  width: 70vw;
+  color: #14274a;
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .text-container {
-  margin-left: 7rem;
+  margin-left: -30rem;
   display: flex;
   flex-direction: column;
   justify-content: left;
+  align-items: center;
   gap: -1rem;
   width: 40vw;
 }
-.container {
+.header-button {
+  top: 90%;
+}
+.container-section {
   display: flex;
+
   width: 100vw;
   justify-content: center;
-  // align-items: center;
+  align-items: center;
+  // padding-top: 0;
   flex-direction: column;
 }
 .button-container {
@@ -44,4 +78,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 850px) {
+  .text-container {
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 750px) {
+  .hero-section-text {
+    font-size: 4rem;
+  }
+  .hero-section-place {
+    font-size: 1.5rem;
+  }
+  .hero-section-description {
+    font-size: 0.8rem;
+  }
+  .text-container {
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero-section-text {
+    font-size: 4rem;
+  }
+  .hero-section-place {
+    font-size: 1.5rem;
+  }
+  .text-container {
+    margin-left: 1rem;
+  }
+  .hero-section-description {
+    font-size: 0.8rem;
+  }
+  .secondary-text {
+    width: auto;
+  }
 }

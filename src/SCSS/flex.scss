@@ -61,3 +61,41 @@ button:hover {
   background-color: #be8317;
   cursor: pointer;
 }
+
+@media (max-width: 850px) {
+  .section-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .section2text {
+    color: #14274a;
+    font-size: 1.2rem;
+    font-family: Montserrat;
+    line-height: 2.5rem;
+    padding-left: 2rem;
+    border-left: 2px solid #14274a;
+    width: 73vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .section2Image {
+    overflow: visible;
+    height: 28rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    height: 20rem;
+    width: 80vw;
+    transition: all 0.5s;
+  }
+  img:hover {
+    height: 25rem;
+    width: 82vw;
+  }
+}

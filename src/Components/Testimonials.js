@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import "../SCSS/flex.scss";
+import "../SCSS/Testimonials.scss";
 import { Button } from "./Button";
 
 const Testimonials = () => {
@@ -91,9 +92,9 @@ const Testimonials = () => {
   };
 
   const textStyle = {
-    width: "50rem",
+    width: "70vw",
     color: "#14274a",
-    fontSize: "1.8rem",
+    fontSize: "1.4rem",
     // fontWeight: 600,
     fontFamily: "Montserrat",
     lineHeight: "2.5rem",
@@ -104,7 +105,7 @@ const Testimonials = () => {
     // gap: "1rem",
   };
   const text = {
-    fontSize: "1.5rem",
+    fontSize: "1rem",
     fontWeight: "500",
   };
 
@@ -116,8 +117,12 @@ const Testimonials = () => {
     <div style={container}>
       <div style={textStyle} className="testimonial-container">
         <h2>Testimonials</h2>
-        <div style={textStyle}>"{data.body}" </div>
-        <div style={text}>{data.name}</div>
+        <div style={textStyle} className="body">
+          "{data.body}"{" "}
+        </div>
+        <div style={text} className="name">
+          {data.name}
+        </div>
         <div style={style}>
           <button onClick={onButtonLeft} style={buttonStyle}>
             {"<"}

@@ -1,9 +1,13 @@
 import React from "react";
 import "../SCSS/footer.scss";
+import { BiLogoFacebook } from "react-icons/bi";
+import { BiLogoInstagram } from "react-icons/bi";
+import { BiLogoTwitter } from "react-icons/bi";
 const Footer = () => {
   return (
     <div>
       <footer>
+        <div className="square"></div>
         <div className="footer-container">
           <ul className="grid-cols-1">
             <li className="lux">LUXURUY</li>
@@ -19,15 +23,31 @@ const Footer = () => {
             <li>Terms & Conditions</li>
           </ul>
           <ul>
-            <li className="flex">Facebook</li>
-            <li className="flex">Twitter</li>
-            <li className="flex">Instagram</li>
+            <li className="flex">
+              {" "}
+              <div>
+                <BiLogoFacebook />
+              </div>
+              <div>Facebook</div>
+            </li>
+            <li className="flex">
+              <div>
+                <BiLogoTwitter />
+              </div>
+              <div>Twitter</div>
+            </li>
+            <li className="flex">
+              <div>
+                <BiLogoInstagram />
+              </div>
+              <div>Intagram</div>
+            </li>
           </ul>
-          <ul>
-            <li>Subscribe to our news letter</li>
-            <li>
-              <input placeholder="Email address" />
-              <button>ok</button>{" "}
+          <ul className="">
+            <li className="subscribe">Subscribe to our news letter</li>
+            <li className="email">
+              <input type="email" placeholder="Email address" />
+              <button className="emailbutton">ok</button>{" "}
             </li>
           </ul>
         </div>

@@ -27,6 +27,9 @@ const HeroOne = () => {
           "Book your stay and enjoy Luxury redefined at the most affordable rates."
         }
         buttontext={button}
+        secondaryText={
+          "All our room types are including complementary breakfast"
+        }
       />
     </div>
   );
